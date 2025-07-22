@@ -8,8 +8,8 @@ export const configCompany = {
     formEmail: 'treetechnew@gmail.com',
     olx: 'https://www.olx.ua/uk/list/user/2hsbRc/',
     prom: 'https://prom.ua/ua/c4122028-tov-brajtajdia-solyushn.html',
-    facebook: 'https://www.facebook.com/treetechnew',
-    instagram: 'https://www.instagram.com/treetechnew',
-    linkedin: 'https://www.linkedin.com/treetechnew',
+    facebook: 'https://www.facebook.com/profile.php?id=61578364689074',
+    instagram: 'https://www.instagram.com/tree.technew',
+    linkedin: 'https://www.linkedin.com/in/maxim-capran-8164b9376',
     whatsapp: 'https://www.whatsapp.com/treetechnew',
 };
