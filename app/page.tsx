@@ -52,7 +52,7 @@ export default function Home() {
             <FAQSection />
             <TestimonialsSection />
             <ContactSection />
-            <Footer />
+            <Footer scrollToSection={scrollToSection} />
             {showScrollButton && (
                 <button
                     onClick={scrollToTop}

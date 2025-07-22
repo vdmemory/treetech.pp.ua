@@ -51,7 +51,7 @@ export function Header({
                             <img
                                 src={logo.src}
                                 alt="Company Logo"
-                                className="w-14"
+                                className="w-11"
                             />
                             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                                 {configCompany.name}

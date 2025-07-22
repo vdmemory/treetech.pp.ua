@@ -5,21 +5,26 @@ import { Textarea } from '@/components/ui/textarea';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { configCompany } from '@/config/configCompany';
+
+const actionEmail = `https://formsubmit.co/${configCompany.formEmail}`;
 
 export function ContactForm() {
     const { t } = useLanguage();
 
     return (
-        <form className="space-y-6">
+        <form action={actionEmail} method="POST" className="space-y-6">
             <div className="grid grid-cols-2 gap-4">
                 <FadeIn delay={0.2}>
                     <Input
+                        name="firstName"
                         placeholder={t('contact.form.firstName')}
                         className="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
                     />
                 </FadeIn>
                 <FadeIn delay={0.3}>
                     <Input
+                        name="lastName"
                         placeholder={t('contact.form.lastName')}
                         className="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
                     />
@@ -27,6 +32,7 @@ export function ContactForm() {
             </div>
             <FadeIn delay={0.4}>
                 <Input
+                    name="email"
                     placeholder={t('contact.form.email')}
                     type="email"
                     className="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
@@ -34,12 +40,14 @@ export function ContactForm() {
             </FadeIn>
             <FadeIn delay={0.5}>
                 <Input
+                    name="company"
                     placeholder={t('contact.form.company')}
                     className="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
                 />
             </FadeIn>
             <FadeIn delay={0.6}>
                 <Textarea
+                    name="message"
                     placeholder={t('contact.form.message')}
                     rows={4}
                     className="border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white"

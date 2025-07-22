@@ -123,12 +123,8 @@ export const uk = {
     'contact.description':
         "Давайте обговоримо, як наші технологічні рішення можуть просунути ваш бізнес вперед. Зв'яжіться з нами сьогодні для безкоштовної консультації.",
     'contact.email.title': 'Напишіть нам',
-    'contact.email.content': 'contact@agiletech.com',
     'contact.phone.title': 'Зателефонуйте нам',
-    'contact.phone.content': '+1 (555) 123-4567',
     'contact.address.title': 'Відвідайте нас',
-    'contact.address.content':
-        '123 Tech Street, Innovation District, Сан-Франциско, CA 94105',
     'contact.form.title': 'Надішліть нам повідомлення',
     'contact.form.description':
         "Заповніть форму нижче, і ми зв'яжемося з вами протягом 24 годин.",
@@ -140,8 +136,6 @@ export const uk = {
     'contact.form.submit': 'Надіслати повідомлення',
 
     // Footer
-    'footer.description':
-        'Лідери цифрової революції з інноваційними ІТ-рішеннями та передовими технологіями.',
     'footer.services.title': 'Послуги',
     'footer.services.software': 'Розробка ПЗ',
     'footer.services.security': 'Кібербезпека',
@@ -150,15 +144,9 @@ export const uk = {
     'footer.company.title': 'Компанія',
     'footer.company.about': 'Про нас',
     'footer.company.team': 'Наша команда',
-    'footer.company.careers': "Кар'єра",
+    'footer.company.projects': 'Наші роботи',
     'footer.company.contact': 'Контакти',
-    'footer.resources.title': 'Ресурси',
-    'footer.resources.blog': 'Блог',
-    'footer.resources.cases': 'Кейси',
-    'footer.resources.docs': 'Документація',
-    'footer.resources.support': 'Підтримка',
-    'footer.copyright':
-        '© 2025 TreeTech. Всі права захищені. Розроблено з ❤️ TreeTech.',
+    'footer.copyright': 'Всі права захищені. Розроблено з ❤️ TreeTech.',
 
     // FAQ Section
     'faq.badge': 'Питання та відповіді',

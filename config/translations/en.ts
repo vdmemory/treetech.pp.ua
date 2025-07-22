@@ -123,12 +123,8 @@ export const en = {
     'contact.description':
         "Let's discuss how our technology solutions can drive your business forward. Contact us today for a free consultation.",
     'contact.email.title': 'Email Us',
-    'contact.email.content': 'contact@agiletech.com',
     'contact.phone.title': 'Call Us',
-    'contact.phone.content': '+1 (555) 123-4567',
     'contact.address.title': 'Visit Us',
-    'contact.address.content':
-        '123 Tech Street, Innovation District, San Francisco, CA 94105',
     'contact.form.title': 'Send us a Message',
     'contact.form.description':
         "Fill out the form below and we'll get back to you within 24 hours.",
@@ -140,8 +136,6 @@ export const en = {
     'contact.form.submit': 'Send Message',
 
     // Footer
-    'footer.description':
-        'Leading the digital revolution with innovative IT solutions and cutting-edge technology.',
     'footer.services.title': 'Services',
     'footer.services.software': 'Software Development',
     'footer.services.security': 'Cybersecurity',
@@ -150,15 +144,10 @@ export const en = {
     'footer.company.title': 'Company',
     'footer.company.about': 'About Us',
     'footer.company.team': 'Our Team',
-    'footer.company.careers': 'Careers',
+    'footer.company.projects': 'Projects',
     'footer.company.contact': 'Contact',
-    'footer.resources.title': 'Resources',
-    'footer.resources.blog': 'Blog',
-    'footer.resources.cases': 'Case Studies',
-    'footer.resources.docs': 'Documentation',
-    'footer.resources.support': 'Support',
     'footer.copyright':
-        '© 2025 TreeTech. All rights reserved. Built with passion and innovation.',
+        'All rights reserved. Built with passion and innovation.',
 
     // FAQ Section
     'faq.badge': 'FAQ',

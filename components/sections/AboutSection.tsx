@@ -79,7 +79,7 @@ export function AboutSection({ scrollToSection }: AboutSectionProps) {
                                 delay={index * 0.2}
                             >
                                 <div
-                                    className={`flex items-center mb-12 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
+                                    className={`flex items-center mb-2 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
                                 >
                                     <div
                                         className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}

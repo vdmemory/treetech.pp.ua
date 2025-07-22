@@ -1,17 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-    Facebook,
-    Twitter,
-    Linkedin,
-    Instagram,
-    Github,
-    Youtube,
-} from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import olx from '../../assets/olx.png';
 import prom from '../../assets/prom.png';
+import whatsapp from '../../assets/whatsapp.png';
+import { configCompany } from '@/config/configCompany';
 
 interface SocialLinksProps {
     variant?: 'header' | 'footer';
@@ -25,25 +20,19 @@ export function SocialLinks({
     const socialLinks = [
         {
             icon: Facebook,
-            href: '#',
+            href: configCompany.facebook || '#',
             label: 'Facebook',
             color: 'hover:text-blue-600',
         },
         {
-            icon: Twitter,
-            href: '#',
-            label: 'Twitter',
-            color: 'hover:text-sky-500',
-        },
-        {
             icon: Linkedin,
-            href: '#',
+            href: configCompany.linkedin || '#',
             label: 'LinkedIn',
             color: 'hover:text-blue-700',
         },
         {
             icon: Instagram,
-            href: '#',
+            href: configCompany.instagram || '#',
             label: 'Instagram',
             color: 'hover:text-pink-600',
         },
@@ -51,14 +40,20 @@ export function SocialLinks({
 
     const otherLinks = [
         {
+            icon: whatsapp,
+            href: configCompany.whatsapp || '#',
+            label: 'WhatsApp',
+            color: 'hover:text-blue-400',
+        },
+        {
             icon: olx,
-            href: '#',
+            href: configCompany.olx || '#',
             label: 'Olx',
             color: 'hover:text-gray-900 dark:hover:text-white',
         },
         {
             icon: prom,
-            href: '#',
+            href: configCompany.prom || '#',
             label: 'Prom',
             color: 'hover:text-red-600',
         },

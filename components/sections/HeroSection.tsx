@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { ScrollReveal, FadeIn } from '@/components/animations/ScrollReveal';
 import { TypeWriter, AnimatedText } from '@/components/animations/TypeWriter';
 import { useLanguage } from '@/hooks/useLanguage';
+import bg from '@/assets/back.png';
 
 interface HeroSectionProps {
     scrollToSection: (sectionId: string) => void;
@@ -79,7 +80,7 @@ export function HeroSection({ scrollToSection }: HeroSectionProps) {
             id="home"
             className="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 overflow-hidden"
         >
-            <div className="absolute inset-0 bg-grid-pattern opacity-50 z-0"></div>
+            <div className="absolute inset-0 bg-grid-pattern opacity-50 z-0 bg"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
                 {renderHeroCenter()}
             </div>

@@ -16,22 +16,23 @@ import {
 } from '@/components/ui/card';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ContactForm } from '@/components/common/ContactForm';
+import { configCompany } from '@/config/configCompany';
 
 const getContacts = (t: (key: string) => string) => [
     {
         icon: <Mail className="text-blue-400" size={24} />,
         title: t('contact.email.title'),
-        content: t('contact.email.content'),
+        content: configCompany.email,
     },
     {
         icon: <Phone className="text-green-400" size={24} />,
         title: t('contact.phone.title'),
-        content: t('contact.phone.content'),
+        content: configCompany.phone,
     },
     {
         icon: <MapPin className="text-purple-400" size={24} />,
         title: t('contact.address.title'),
-        content: t('contact.address.content'),
+        content: configCompany.address,
     },
 ];
 
