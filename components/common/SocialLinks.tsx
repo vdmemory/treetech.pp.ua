@@ -10,6 +10,8 @@ import {
     Youtube,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import olx from '../../assets/olx.png';
+import prom from '../../assets/prom.png';
 
 interface SocialLinksProps {
     variant?: 'header' | 'footer';
@@ -45,16 +47,19 @@ export function SocialLinks({
             label: 'Instagram',
             color: 'hover:text-pink-600',
         },
+    ];
+
+    const otherLinks = [
         {
-            icon: Github,
+            icon: olx,
             href: '#',
-            label: 'GitHub',
+            label: 'Olx',
             color: 'hover:text-gray-900 dark:hover:text-white',
         },
         {
-            icon: Youtube,
+            icon: prom,
             href: '#',
-            label: 'YouTube',
+            label: 'Prom',
             color: 'hover:text-red-600',
         },
     ];
@@ -96,6 +101,24 @@ export function SocialLinks({
                         <social.icon size={20} className="text-gray-300" />
                     </motion.a>
                 ))}
+                {otherLinks.map((social, index) => (
+                    <motion.a
+                        key={social.label}
+                        href={social.href}
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.2, y: -2 }}
+                        whileTap={{ scale: 0.9 }}
+                        className={`p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 ${social.color}`}
+                        aria-label={social.label}
+                    >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src={social.icon.src}
+                            alt={social.label}
+                            className={`w-5 h-5 max-w-5xl ${social.color} transition-all duration-300`}
+                        />
+                    </motion.a>
+                ))}
             </motion.div>
         );
     }
@@ -107,7 +130,7 @@ export function SocialLinks({
             animate="visible"
             className={`flex space-x-2 ${className}`}
         >
-            {socialLinks.slice(0, 4).map((social, index) => (
+            {socialLinks.map((social, index) => (
                 <motion.div
                     key={social.label}
                     variants={itemVariants}

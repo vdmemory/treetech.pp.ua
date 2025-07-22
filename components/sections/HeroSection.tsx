@@ -4,11 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import {
-    ScrollReveal,
-    FadeIn,
-    SlideIn,
-} from '@/components/animations/ScrollReveal';
+import { ScrollReveal, FadeIn } from '@/components/animations/ScrollReveal';
 import { TypeWriter, AnimatedText } from '@/components/animations/TypeWriter';
 import { useLanguage } from '@/hooks/useLanguage';
 

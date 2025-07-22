@@ -37,10 +37,10 @@ export const en = {
         'Scalable cloud infrastructure and migration services for enhanced performance and reliability.',
 
     // About Section
-    'about.badge': 'About AgileTech',
+    'about.badge': 'About TreeTech',
     'about.title': 'Leading the Digital Revolution',
     'about.description':
-        'With over a decade of experience in the technology industry, AgileTech has been at the forefront of digital innovation. We combine technical expertise with strategic thinking to deliver solutions that not only meet current needs but anticipate future challenges.',
+        'With over a decade of experience in the technology industry, TreeTech has been at the forefront of digital innovation. We combine technical expertise with strategic thinking to deliver solutions that not only meet current needs but anticipate future challenges.',
     'about.stats.projects': 'Projects Completed',
     'about.stats.satisfaction': 'Client Satisfaction',
     'about.stats.experience': 'Years Experience',
@@ -105,7 +105,7 @@ export const en = {
     'testimonials.description':
         "Don't just take our word for it. Here's what industry leaders have to say about our work.",
     'testimonials.jennifer.quote':
-        'AgileTech transformed our entire digital infrastructure. Their expertise in cloud migration saved us 40% on operational costs while improving performance dramatically.',
+        'TreeTech transformed our entire digital infrastructure. Their expertise in cloud migration saved us 40% on operational costs while improving performance dramatically.',
     'testimonials.jennifer.author': 'Jennifer Adams',
     'testimonials.jennifer.role': 'CTO, TechCorp',
     'testimonials.robert.quote':
@@ -158,7 +158,7 @@ export const en = {
     'footer.resources.docs': 'Documentation',
     'footer.resources.support': 'Support',
     'footer.copyright':
-        '© 2025 AgileTech. All rights reserved. Built with Next.js and React.',
+        '© 2025 TreeTech. All rights reserved. Built with passion and innovation.',
 
     // FAQ Section
     'faq.badge': 'FAQ',
