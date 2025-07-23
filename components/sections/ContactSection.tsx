@@ -17,8 +17,9 @@ import {
 import { useLanguage } from '@/hooks/useLanguage';
 import { ContactForm } from '@/components/common/ContactForm';
 import { configCompany } from '@/config/configCompany';
+import { Language } from '@/types/language';
 
-const getContacts = (t: (key: string) => string) => [
+const getContacts = (t: (key: string) => string, language: Language) => [
     {
         icon: <Mail className="text-blue-400" size={24} />,
         title: t('contact.email.title'),
@@ -32,12 +33,15 @@ const getContacts = (t: (key: string) => string) => [
     {
         icon: <MapPin className="text-purple-400" size={24} />,
         title: t('contact.address.title'),
-        content: configCompany.address,
+        content:
+            language === 'en'
+                ? configCompany.addressEng
+                : configCompany.address,
     },
 ];
 
 export function ContactSection() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     return (
         <section id="contact" className="py-20 bg-gray-900">
@@ -58,7 +62,7 @@ export function ContactSection() {
                         </FadeIn>
 
                         <div className="space-y-6">
-                            {getContacts(t).map((contact, index) => (
+                            {getContacts(t, language).map((contact, index) => (
                                 <ScrollReveal
                                     key={index}
                                     direction="right"

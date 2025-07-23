@@ -1,11 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import olx from '../../assets/olx.png';
 import prom from '../../assets/prom.png';
-import whatsapp from '../../assets/whatsapp.png';
+// import whatsapp from '../../assets/whatsapp.png';
+import insa from '../../assets/insta.png';
+import facebook from '../../assets/facebook.png';
+import linkedin from '../../assets/linkedin.png';
 import { configCompany } from '@/config/configCompany';
 
 interface SocialLinksProps {
@@ -19,32 +21,29 @@ export function SocialLinks({
 }: SocialLinksProps) {
     const socialLinks = [
         {
-            icon: Facebook,
+            icon: facebook,
             href: configCompany.facebook || '#',
             label: 'Facebook',
             color: 'hover:text-blue-600',
         },
         {
-            icon: Linkedin,
+            icon: linkedin,
             href: configCompany.linkedin || '#',
             label: 'LinkedIn',
             color: 'hover:text-blue-700',
         },
         {
-            icon: Instagram,
+            icon: insa,
             href: configCompany.instagram || '#',
             label: 'Instagram',
             color: 'hover:text-pink-600',
         },
-    ];
-
-    const otherLinks = [
-        {
-            icon: whatsapp,
-            href: configCompany.whatsapp || '#',
-            label: 'WhatsApp',
-            color: 'hover:text-blue-400',
-        },
+        // {
+        //     icon: whatsapp,
+        //     href: configCompany.whatsapp || '#',
+        //     label: 'WhatsApp',
+        //     color: 'hover:text-blue-400',
+        // },
         {
             icon: olx,
             href: configCompany.olx || '#',
@@ -93,19 +92,6 @@ export function SocialLinks({
                         className={`p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 ${social.color}`}
                         aria-label={social.label}
                     >
-                        <social.icon size={20} className="text-gray-300" />
-                    </motion.a>
-                ))}
-                {otherLinks.map((social, index) => (
-                    <motion.a
-                        key={social.label}
-                        href={social.href}
-                        variants={itemVariants}
-                        whileHover={{ scale: 1.2, y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className={`p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all duration-300 ${social.color}`}
-                        aria-label={social.label}
-                    >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src={social.icon.src}
@@ -125,7 +111,7 @@ export function SocialLinks({
             animate="visible"
             className={`flex space-x-2 ${className}`}
         >
-            {socialLinks.map((social, index) => (
+            {socialLinks.slice(0, 3).map((social, index) => (
                 <motion.div
                     key={social.label}
                     variants={itemVariants}
@@ -139,7 +125,12 @@ export function SocialLinks({
                         className={`w-9 h-9 p-0 hover:bg-gray-100 dark:hover:bg-gray-800 ${social.color}`}
                     >
                         <a href={social.href} aria-label={social.label}>
-                            <social.icon size={16} />
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src={social.icon.src}
+                                alt={social.label}
+                                className={`w-5 h-5 max-w-5xl ${social.color} transition-all duration-300`}
+                            />
                         </a>
                     </Button>
                 </motion.div>

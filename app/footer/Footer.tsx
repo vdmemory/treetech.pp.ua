@@ -73,7 +73,7 @@ interface FooterProps {
 }
 
 export function Footer({ scrollToSection }: FooterProps) {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     return (
         <footer className="bg-black dark:bg-gray-950 text-white py-12">
@@ -84,8 +84,13 @@ export function Footer({ scrollToSection }: FooterProps) {
                             {configCompany.name}
                         </div>
                         <p className="text-gray-400 dark:text-gray-500 mb-6">
-                            {configCompany.info}
-                            {configCompany.address}
+                            {language === 'en'
+                                ? configCompany.infoEng +
+                                  ' ' +
+                                  configCompany.addressEng
+                                : configCompany.info +
+                                  ' ' +
+                                  configCompany.address}
                         </p>
                         <SocialLinks variant="footer" />
                     </FadeIn>
