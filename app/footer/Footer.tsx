@@ -86,10 +86,10 @@ export function Footer({ scrollToSection }: FooterProps) {
                         <p className="text-gray-400 dark:text-gray-500 mb-6">
                             {language === 'en'
                                 ? configCompany.infoEng +
-                                  ' ' +
+                                  ', ' +
                                   configCompany.addressEng
                                 : configCompany.info +
-                                  ' ' +
+                                  ', ' +
                                   configCompany.address}
                         </p>
                         <SocialLinks variant="footer" />
